@@ -67,7 +67,7 @@ def viktroriin():
         jatk = input("Jätkata? (ja=1/ei=erinivad nupid): ")
         if jatk != "1":
             break
-    print(f"Vastasite {oigevastud} küsimusele {oigevastud + valevastud}-st õigesti  ({((oigevastud / valevastud) * 100)=:.0f}%).")#:.0f округляет результат
+    print(f"Vastasite {oigevastud} küsimusele {oigevastud + valevastud}-st õigesti  ({((oigevastud / (valevastud + oigevastud) * 100)=:.0f}%).")#:.0f округляет результат
 
 def näita_menüüd(menüü):
     numbrid = sorted(menüü.keys())
